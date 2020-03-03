@@ -260,9 +260,13 @@ def max_stat(stat)
   
   info = game_hash
   
+  all_players = []
   all_home = info[:home][:players].map{|hash| hash.fetch(:player_name)}
   all_away = info[:away][:players].map{|hash| hash.fetch(:player_name)}
-  all_players = []
+  
+  all_players = all_players.push(all_home)
+  all_players = all_players.push(all_away)
+  all_players = all_players.flatten
   
   all_players.push!
   
