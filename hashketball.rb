@@ -148,6 +148,7 @@ def num_points_scored(player_name)
       return info[:away][:players][
         info[:away][:players].index{|player| player.any?{|key, value| value == player_name}}
         ][:points]
+      end
   end
   
 end
