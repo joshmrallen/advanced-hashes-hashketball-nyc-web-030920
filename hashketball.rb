@@ -268,7 +268,7 @@ def max_stat(stat)
     
   }
   
-  if info[:home][:players].index{|player| player.any?{|key, value| value == player_name}}
+  info[:home][:players].index{|player| player.any?{|key, value| value == player_name}}
   
   
   return stat_value #a 2-key hash with name and stat
