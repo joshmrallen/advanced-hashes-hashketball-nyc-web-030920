@@ -331,6 +331,13 @@ end
 
 def home_players
   
+  return info[:home][:players].map{|hash| hash.fetch(:player_name)}
+  
+end
+
+def away_players
+  
+  return info[:away][:players].map{|hash| hash.fetch(:player_name)}
   
 end
 
