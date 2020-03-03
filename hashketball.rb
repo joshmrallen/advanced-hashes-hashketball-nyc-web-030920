@@ -272,6 +272,14 @@ def winning_team
   
 end
 
+#method that returns the name of the player with the longest name
+def player_with_longest_name
+  
+  
+  
+  
+end
+
 
 
 # --------- helper methods ------------
@@ -320,5 +328,10 @@ def max_stat(stat)
   
 end
 
+
+def home_players
+  
+  
+end
 
 
