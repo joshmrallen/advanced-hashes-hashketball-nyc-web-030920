@@ -164,6 +164,12 @@ def team_colors(team_name)
   
 end
 
+#method to return list of team names as an array
+def team_name(game)
+  
+  
+  
+end
 
 # --------- helper methods ------------
 
