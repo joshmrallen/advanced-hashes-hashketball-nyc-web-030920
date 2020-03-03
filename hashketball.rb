@@ -233,6 +233,15 @@ end
 
 
 
+#method to return the name of the player who has the most points
+def most_points_scored
+  
+  
+  
+end
+
+
+
 # --------- helper methods ------------
 
 #method to seach for a given player's stats
