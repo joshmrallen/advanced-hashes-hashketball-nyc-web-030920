@@ -6,11 +6,11 @@ def game_hash
     :home => {
       :team_name => "Brooklyn Nets", #the team's name as a string
       :colors => ["black", "white"],    #individual color names in an array
-      :players => []    #an array of hashes - contains stats for each player (including name)
+      :players => [{}, {}, {}, {}, {}]    #an array of hashes - contains stats for each player (including name)
     },
     :away => {
-      :team_name => "", #the team's name as a string
-      :colors => [],    #individual color names in an array
+      :team_name => "Charlotte Hornets", #the team's name as a string
+      :colors => ["turquoise", "purple"],    #individual color names in an array
       :players => []    #an array of hashes - contains stats for each player (including name)
     }
   }
