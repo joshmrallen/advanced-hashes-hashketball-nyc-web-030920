@@ -266,10 +266,12 @@ def max_stat(stat)
   
   max = all_stat.max
   
-  stat_value = {
-    :player_name => all_names[all_stat.index(max)],
-    stat => max
-  }
+  max_player_index = all_stat.index(max)
+  
+  stat_value = {}
+  
+  stat_value[:max_player] = all_players[max_player_index]
+  stat_value[:max_stat] = max
   
   return stat_value #a 2-key hash with name and stat
   
