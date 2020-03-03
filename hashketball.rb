@@ -183,11 +183,11 @@ def player_numbers(team_name)
   
   numbers = []
   
-  if info[:home][:team_name].value?(team_name)
+  if info[:home].value?(team_name)
     #use .each with block that pushes each player's number to the array for the array of player hashes
     info[:home][:players].each{|hash| numbers.push(hash[:number])}
   else
-    if info[:away][:team_name] == team_name
+    if info[:away].value?(team_name)
       #use .each with block that pushes each player's number to the array for the array of player hashes
       info[:away][:players].each{|hash| numbers.push(hash[:number])}
     end
