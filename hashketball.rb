@@ -189,6 +189,7 @@ def player_numbers(team_name)
   else
     if info[:away][:team_name] == team_name
       #use .each with block that pushes each player's number to the array for the array of player hashes
+      info[:away][:players].each{|hash| numbers.push(hash[:number])}
     end
   end
   
