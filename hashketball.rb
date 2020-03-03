@@ -130,6 +130,15 @@ def game_hash
 end
 
 
+#method to return number of points scored by specific player
+def num_points_scored(player_name)
+  
+  info = game_hash
+  
+  if info.any? {||}
+  
+  
+end
 
 
 
