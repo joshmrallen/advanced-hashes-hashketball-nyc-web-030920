@@ -236,7 +236,7 @@ end
 #method to return the name of the player who has the most points
 def most_points_scored
   
-  
+  most_points = max_stat()
   
 end
 
