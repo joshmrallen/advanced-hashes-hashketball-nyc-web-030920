@@ -248,6 +248,8 @@ end
 #method to return the team name  which has the most points
 def winning_team
   
+  info = game_hash
+  
   #arrays to iterate over to pass as arguments to stat_search method
   all_home = info[:home][:players].map{|hash| hash.fetch(:player_name)}
   all_away = info[:away][:players].map{|hash| hash.fetch(:player_name)}
@@ -256,6 +258,10 @@ def winning_team
   total_away = 0
   
   all_home.each{|name| total_home += stat_search(name, :points)}
+  all_away.each{|name| total_away += stat_search(name, :points)}
+  
+  if total_home > total_away
+    return 
   
 end
 
