@@ -153,10 +153,10 @@ def team_colors(team_name)
   
   info = game_hash
   
-  if info[:home].any?{|key, value| key == team_name}
+  if info[:home].any?{|key, value| value == team_name}
     return info[:home][:colors]
   else
-    if info[:away].any?{|key, value| key == team_name}
+    if info[:away].any?{|key, value| value == team_name}
       return info[:away][:colors]
     end
   end
