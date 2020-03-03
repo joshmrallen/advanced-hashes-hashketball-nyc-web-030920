@@ -136,6 +136,7 @@ end
 def num_points_scored(player_name)
   
   info = game_hash
+  binding.pry
   
   #using the index of the players array of hashes: info[:home][:players][index][:points]
   if info[:home][:players].index{|player| player.any?{|key, value| value == player_name}}
