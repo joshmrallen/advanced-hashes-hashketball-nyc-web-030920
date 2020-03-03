@@ -175,6 +175,17 @@ def team_names
 
 end
 
+
+#method to return an array of jersey numbers for a specified team
+def player_numbers(team_name)
+  
+  info = game_hash
+  
+  
+  
+  
+end
+
 # --------- helper methods ------------
 
 #method to seach for player stats
