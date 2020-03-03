@@ -277,7 +277,7 @@ def player_with_longest_name
   
   all_players = home_players + away_players
   
-  
+  all_players.max{|name| name.length}
   
 end
 
