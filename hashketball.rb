@@ -275,6 +275,7 @@ end
 #method that returns the name of the player with the longest name
 def player_with_longest_name
   
+  all_players = home_players + away_players
   
   
   
