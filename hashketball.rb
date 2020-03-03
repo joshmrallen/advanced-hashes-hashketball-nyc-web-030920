@@ -275,6 +275,8 @@ def max_stat(stat)
   
   return stat_value #a 2-key hash with name and stat
   
+  binding.pry
+  
 end
 
 
