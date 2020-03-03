@@ -42,14 +42,14 @@ def game_hash
         }, 
         {
           :player_name => "Mason Plumlee",
-          :number => ,
-          :shoe => ,
-          :points => ,
-          :rebounds => ,
-          :assists => ,
-          :steals => ,
-          :blocks => ,
-          :slam_dunks => 
+          :number => 1,
+          :shoe => 19,
+          :points => 26,
+          :rebounds => 11,
+          :assists => 6,
+          :steals => 3,
+          :blocks => 8,
+          :slam_dunks => 5
         }, 
         {
           :player_name => "",
