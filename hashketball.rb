@@ -203,9 +203,9 @@ def player_stats(player_name)
   
   info = game_hash
   
-  stats = {
-    
-  }
+  stats = {}
+  
+  
   
   return stats
   
