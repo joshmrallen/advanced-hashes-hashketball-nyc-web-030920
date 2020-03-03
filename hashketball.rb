@@ -245,7 +245,7 @@ def most_points_scored
 end
 
 
-#method to return the team name 
+#method to return the team name  which has the most points
 
 
 
