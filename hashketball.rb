@@ -260,9 +260,15 @@ def max_stat(stat)
   
   info = game_hash
   
-  stat_value = {}
+  all_names = []
+  all_stat = []
   
-  info[:home][:players].each{|hash| hash.each {|key, value| key == stat }}
+  stat_value = {
+    :player_name => all_names[all_stat.index()]
+    
+  }
+  
+  if info[:home][:players].index{|player| player.any?{|key, value| value == player_name}}
   
   
   return stat_value #a 2-key hash with name and stat
