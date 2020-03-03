@@ -197,6 +197,20 @@ def player_numbers(team_name)
   
 end
 
+
+#method to return a hash of a specified player's stats
+def player_stats(player_name)
+  
+  info = game_hash
+  
+  
+  
+  return stats
+  
+end
+
+
+
 # --------- helper methods ------------
 
 #method to seach for player stats
