@@ -148,6 +148,17 @@ def shoe_size(player_name)
 end
 
 
+#method to return list of team colors
+def team_colors(team_name)
+  
+  
+  
+  
+end
+
+
+# --------- helper methods ------------
+
 #method to seach for player stats
 def stat_search(player_name, stat)
   
