@@ -7,7 +7,7 @@ def game_hash
   hash = {
     :home => {
       :team_name => "Brooklyn Nets", #the team's name as a string
-      :colors => ["black", "white"],    #individual color names in an array
+      :colors => ["Black", "White"],    #individual color names in an array
       :players => [
         {
           :player_name => "Alan Anderson",
@@ -67,7 +67,7 @@ def game_hash
     }, #home team hash
     :away => {
       :team_name => "Charlotte Hornets", #the team's name as a string
-      :colors => ["turquoise", "purple"],    #individual color names in an array
+      :colors => ["Turquoise", "Purple"],    #individual color names in an array
       :players => [
         {
           :player_name => "Jeff Adrien",
