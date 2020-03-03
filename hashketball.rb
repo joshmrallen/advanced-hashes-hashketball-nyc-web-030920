@@ -193,6 +193,8 @@ def player_numbers(team_name)
     end
   end
   
+  return numbers
+  
 end
 
 # --------- helper methods ------------
