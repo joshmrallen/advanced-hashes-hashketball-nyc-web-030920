@@ -140,11 +140,11 @@ def num_points_scored(player_name)
   #using the index of the players array of hashes: info[:home][:players][index][:points]
   if info[:home][:players].index{|player| player.any?{|key, value| value == player_name}}
     return info[:home][:players][
-      info[:home][:players].index{|name| name == player_name}
+      info[:home][:players].index{|player| player.any?{|key, value| value == player_name}}
       ][:points]
-  elseif info[:away][:players].index{|name| name == player_name}
+  elseif info[:away][:players].index{|player| player.any?{|key, value| value == player_name}}
       return info[:away][:players][
-        info[:away][:players].index{|name| name == player_name}
+        info[:away][:players].index{|player| player.any?{|key, value| value == player_name}}
         ][:points]
   end
   
