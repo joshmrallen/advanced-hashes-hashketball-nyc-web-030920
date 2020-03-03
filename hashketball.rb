@@ -261,14 +261,14 @@ def max_stat(stat)
   info = game_hash
   
   all_names = []
-  all_stat = []
+  all_stat = info[:home][:players].map{|hash| hash.fetch(stat)}
   
   stat_value = {
     :player_name => all_names[all_stat.index()]
     
   }
   
-  info[:home][:players].map{|hash| hash.fetch(stat)}
+
   
   
   return stat_value #a 2-key hash with name and stat
