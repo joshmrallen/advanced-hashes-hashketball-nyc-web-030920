@@ -148,12 +148,18 @@ def shoe_size(player_name)
 end
 
 
-#method to return list of team colors
+#method to return list of team colors as an array
 def team_colors(team_name)
   
   info = game_hash
   
-  if info[:home].any?
+  if info[:home].any?{|key, value| key == team_name}
+    return info[:home][:colors]
+  else
+    if info[:away].any?{|key, value| key == team_name}
+      return info[:away][:colors]
+    end
+  end
   
   
 end
