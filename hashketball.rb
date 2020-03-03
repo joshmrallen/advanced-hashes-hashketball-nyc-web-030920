@@ -137,7 +137,7 @@ def num_points_scored(player_name)
   
   info = game_hash
   
-  #using the index of the players array of hashes: info[:home][:players][index][:points]
+  #using the index of the players array of hashes: info[:home][:players][index][:points], then using player.any? to parse each key/value, then returning the :points value for the hash at that index
   if info[:home][:players].index{|player| player.any?{|key, value| value == player_name}}
     return info[:home][:players][
       info[:home][:players].index{|player| player.any?{|key, value| value == player_name}}
@@ -156,6 +156,21 @@ end
 #method to return the show size for any specified player
 def shoe_size(player_name)
 
+  info = game_hash
+  
+  #using the index of the players array of hashes: info[:home][:players][index][:points], then using player.any? to parse each key/value, then returning the :shoe value for the hash at that index
+    if info[:home][:players].index{|player| player.any?{|key, value| value == player_name}}
+    return info[:home][:players][
+      info[:home][:players].index{|player| player.any?{|key, value| value == player_name}}
+      ][:points]
+  else
+    if info[:away][:players].index{|player| player.any?{|key, value| value == player_name}}
+      return info[:away][:players][
+        info[:away][:players].index{|player| player.any?{|key, value| value == player_name}}
+        ][:points]
+      end
+  end  
+  
     
   
 end
