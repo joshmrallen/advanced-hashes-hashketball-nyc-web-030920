@@ -153,7 +153,7 @@ def team_colors(team_name)
   
   info = game_hash
   
-  
+  if info[:home].any?
   
   
 end
