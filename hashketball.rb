@@ -291,8 +291,17 @@ end
 #method that returns true if the player with the longest name had the most steals
 def long_name_steals_a_ton?
   
-  #use stat_search with player_with_longest_name as argument and 
-  
+    #use max_stat(:steals) and see if max_stat[:max_player] == player_with_longest_name 
+    
+    player = player_with_longest_name
+    
+    stealer = max_stat(:steals)
+    
+    if stealer[:max_player] == player
+      return true
+    else
+      return false
+    end
   
 end
 
