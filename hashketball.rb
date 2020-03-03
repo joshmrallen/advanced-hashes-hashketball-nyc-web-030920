@@ -203,10 +203,18 @@ def player_stats(player_name)
   
   info = game_hash
   
-  stats = {}
-  
-  
-  
+  stats = {
+    :number => stat_search(player_name, :number),
+    :shoe => stat_search(player_name, :shoe),
+    :points => stat_search(player_name, :points),
+    :rebounds => stat_search(player_name, :rebounds),
+    :assists => stat_search(player_name, :assists),
+    :steals => stat_search(player_name, :steals),
+    :blocks => stat_search(player_name, :blocks),
+    :slam_dunks => stat_search(player_name, :slam_dunks)
+    
+  }
+
   return stats
   
 end
