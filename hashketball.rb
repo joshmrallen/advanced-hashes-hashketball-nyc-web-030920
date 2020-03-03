@@ -288,6 +288,14 @@ def player_with_longest_name
 end
 
 
+#method that returns true if the player with the longest name had the most steals
+def long_name_steals_a_ton?
+  
+  #use stat_search with player_with_longest_name as argument and 
+  
+  
+end
+
 
 # --------- helper methods ------------
 
