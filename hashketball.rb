@@ -338,6 +338,8 @@ end
 #returns array of home team player names
 def home_players
   
+  info = game_hash
+  
   return info[:home][:players].map{|hash| hash.fetch(:player_name)}
   
 end
@@ -345,6 +347,8 @@ end
 
 #returns array of away team player names
 def away_players
+  
+  info = game_hash
   
   return info[:away][:players].map{|hash| hash.fetch(:player_name)}
   
