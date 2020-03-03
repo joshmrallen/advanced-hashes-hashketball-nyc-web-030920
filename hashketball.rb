@@ -4,14 +4,14 @@ def game_hash
   
   hash = {
     :home => {
-      :team_name => "",
-      :colors => [],
-      :players => []
+      :team_name => "", #the team's name as a string
+      :colors => [],    #individual color names in an array
+      :players => []    #an array of hashes - contains stats for each player (including name)
     },
     :away => {
-      :team_name => "",
-      :colors => [],
-      :players => []
+      :team_name => "", #the team's name as a string
+      :colors => [],    #individual color names in an array
+      :players => []    #an array of hashes - contains stats for each player (including name)
     }
   }
   
