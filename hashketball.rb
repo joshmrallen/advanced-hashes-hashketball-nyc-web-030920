@@ -135,8 +135,17 @@ def num_points_scored(player_name)
   
   info = game_hash
   
-  if info[:home][:players].index{|name| name == player_name} || info[:away][:players].index{|name| name == player_name}
-    return 
+  #using the index of the players array of hashes: info[:home][:players][index][:points]
+  if info[:home][:players].index{|name| name == player_name}
+    return info[:home][:players][
+      info[:home][:players].index{|name| name == player_name}
+      ][:points]
+  else
+    if info[:away][:players].index{|name| name == player_name}
+      return info[:away][:players][
+        info[:away][:players].index{|name| name == player_name}
+        ][:points]
+  end
   
   
 end
