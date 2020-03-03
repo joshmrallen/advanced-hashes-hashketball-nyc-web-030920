@@ -262,7 +262,7 @@ def max_stat(stat)
   
   stat_value = {}
   
-  
+  info[:home][:players].each{|hash| hash.each {|key, value| key == stat }}
   
   
   return stat_value #a 2-key hash with name and stat
