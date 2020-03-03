@@ -233,7 +233,7 @@ end
 
 # --------- helper methods ------------
 
-#method to seach for player stats
+#method to seach for a given player's stats
 def stat_search(player_name, stat)
   
   info = game_hash
@@ -255,7 +255,17 @@ def stat_search(player_name, stat)
 end
 
 
-
+#helper method to find the max of a given stat and reports the player's name along with the value of that stat
+def max_stat(stat)
+  
+  stat_value = {}
+  
+  
+  
+  
+  return stat_value #a 2-key hash with name and stat
+  
+end
 
 
 
