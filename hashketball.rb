@@ -174,6 +174,28 @@ def shoe_size(player_name)
 end
 
 
+#method to seach for player stats
+def stat_search(player_name, stat)
+  
+  info = game_hash
+  
+    #using the index of the players array of hashes: info[:home][:players][index][:points], then using player.any? to parse each key/value, then returning the stat value for the hash at that index
+    if info[:home][:players].index{|player| player.any?{|key, value| value == player_name}}
+    return info[:home][:players][
+      info[:home][:players].index{|player| player.any?{|key, value| value == player_name}}
+      ][stat]
+  else
+    if info[:away][:players].index{|player| player.any?{|key, value| value == player_name}}
+      return info[:away][:players][
+        info[:away][:players].index{|player| player.any?{|key, value| value == player_name}}
+        ][stat]
+    end
+  end 
+  
+  
+end
+
+
 
 
 
