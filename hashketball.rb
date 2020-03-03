@@ -153,6 +153,14 @@ def num_points_scored(player_name)
 end
 
 
+#method to return the show size for any specified player
+def shoe_size(player_name)
+
+    
+  
+end
+
+
 
 
 
