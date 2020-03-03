@@ -261,7 +261,14 @@ def winning_team
   all_away.each{|name| total_away += stat_search(name, :points)}
   
   if total_home > total_away
-    return 
+    return info[:home][:team_name]
+  else
+    if total_away > total_home
+      return info[:away][:team_name]
+    else 
+      return "It's a tie!"
+    end
+  end
   
 end
 
