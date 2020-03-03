@@ -277,7 +277,11 @@ def player_with_longest_name
   
   all_players = home_players + away_players
   
-  longest_name = all_players.map{|name| name.length}
+  name_lengths = all_players.map{|name| name.length}
+  
+  longest = name_lengths.max
+  
+  longest_name = all_players[name_lengths.index(longest)]
   
   return longest_name
   
