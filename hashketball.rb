@@ -258,6 +258,8 @@ end
 #helper method to find the max of a given stat and reports the player's name along with the value of that stat
 def max_stat(stat)
   
+  info = game_hash
+  
   stat_value = {}
   
   
