@@ -162,16 +162,14 @@ def shoe_size(player_name)
     if info[:home][:players].index{|player| player.any?{|key, value| value == player_name}}
     return info[:home][:players][
       info[:home][:players].index{|player| player.any?{|key, value| value == player_name}}
-      ][:points]
+      ][:shoe]
   else
     if info[:away][:players].index{|player| player.any?{|key, value| value == player_name}}
       return info[:away][:players][
         info[:away][:players].index{|player| player.any?{|key, value| value == player_name}}
-        ][:points]
+        ][:shoe]
       end
   end  
-  
-    
   
 end
 
