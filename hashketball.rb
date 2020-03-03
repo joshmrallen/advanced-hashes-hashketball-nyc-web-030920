@@ -151,6 +151,8 @@ end
 #method to return list of team colors
 def team_colors(team_name)
   
+  info = game_hash
+  
   
   
   
