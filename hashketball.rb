@@ -328,13 +328,15 @@ def max_stat(stat)
   
 end
 
-
+#returns array of home team player names
 def home_players
   
   return info[:home][:players].map{|hash| hash.fetch(:player_name)}
   
 end
 
+
+#returns array of away team player names
 def away_players
   
   return info[:away][:players].map{|hash| hash.fetch(:player_name)}
