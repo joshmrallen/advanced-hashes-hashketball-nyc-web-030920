@@ -268,7 +268,7 @@ def max_stat(stat)
     
   }
   
-  info[:home][:players].each{|hash| hash.fetch(stat)}
+  info[:home][:players].map{|hash| hash.fetch(stat)}
   
   
   return stat_value #a 2-key hash with name and stat
