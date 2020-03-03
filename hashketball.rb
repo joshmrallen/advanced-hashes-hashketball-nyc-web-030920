@@ -225,7 +225,7 @@ def big_shoe_rebounds
   
   big_shoe = max_stat(:shoe)
   
-  rebounds = stat_search(big_shoe[:max_player], :)
+  rebounds = stat_search(big_shoe[:max_player], :rebounds)
   
   return rebounds
   
